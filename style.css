@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #header {
@@ -57,7 +59,7 @@ a {
     max-width: 500px;
 }
 
-#opening-left button {
+button {
     background-color: #366ff7;
     color: #f9faf8;
     font-weight: 900;
@@ -66,6 +68,9 @@ a {
     width: 110px;
     border: none;
     border-radius: 12px;
+}
+
+#opening-left button {
     margin-top: 24px;
 }
 
@@ -91,10 +96,11 @@ a {
     display: flex;
     justify-content: space-around;
     gap: 36px;
+    margin-bottom: 48px;
 }
 
 #content img {
-    border-radius: 15%;
+    border-radius: 12%;
     height: 200px;
     width: 200px;
     border: 5px solid #366ff7;
@@ -108,4 +114,54 @@ a {
     text-align: center;
     gap: 36px;
     max-width: 256px;
+}
+
+#content-quote {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0 48px 0;
+    background-color: lightslategrey;
+    align-self: stretch;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+}
+
+#quote {
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+#person {
+    padding-left: 64px;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+#content-sign-up {
+    height: 200px;
+    display: flex;
+}
+
+#sign-up-panel {
+    height: 90px;
+    background-color: #5C8CFA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 64px;
+    gap: 64px;
+}
+
+#sign-up-panel button {
+    border: 2px solid white;
+}
+
+#footer div {
+    height: 64px;
+    display: flex;
+    background-color: #1f2937;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
